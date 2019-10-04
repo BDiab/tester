@@ -5,8 +5,30 @@ import { Component } from '@angular/core';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
 
-  constructor() {}
+export class HomePage {
+  Family: any;
+  
+  constructor( ) {
+    this.Family = [{
+      FileName: "Grandfather",
+      Children: [
+        {
+          FileName: "Mom",
+          Children: [
+            {
+              FileName: "Kid",
+            },
+            {
+              FileName: "Kid2",
+            }
+          ]
+        },
+        {
+          FileName: "Dad",
+        }
+      ]
+    }]
+  }
 
 }
